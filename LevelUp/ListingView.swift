@@ -16,14 +16,15 @@ struct ListingView: View {
                 ForEach(dataModel.categories) { category in
                     Section {
                         let items = dataModel.matchingItems(for: category)
-
+                        if items.isEmpty {
+                            ContentUnavailableView("No \(category.id.lowercased()) matches \(dataModel.searchText).", systemImage: category.icon)
+                        }
                         ScrollView(.horizontal, showsIndicators: false) {
                             HStack {
                                 ForEach(items) { item in
                                     ItemView(item: item)
                                 }
                             }
-                            .padding(.horizontal, 20)
                             .scrollTargetLayout()
                         }
                         .scrollTargetBehavior(.viewAligned)
@@ -41,9 +42,6 @@ struct ListingView: View {
             .navigationTitle("🎌 Japan 2023")
             .searchable(text: $dataModel.searchText)
             .toolbar {
-//                Button(action: dataModel.reset) {
-//                    Label("Erase data", systemImage: "eraser")
-//                }
                 Button("Erase data", systemImage: "eraser",action: dataModel.reset) 
             }
         }

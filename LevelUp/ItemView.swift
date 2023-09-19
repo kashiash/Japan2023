@@ -13,16 +13,10 @@ struct ItemView: View {
 
     var body: some View {
         ZStack(alignment: .bottom) {
-            Image(systemName: "rainbow")
+            Image(item.id)
                 .resizable()
                 .scaledToFill()
                 .frame(height: 400)
-            .symbolRenderingMode(.multicolor)
-            .symbolEffect(.variableColor)
-//            Image(item.id)
-//                .resizable()
-//                .scaledToFill()
-//                .frame(height: 400)
 
             VStack(spacing: 0) {
                 Rectangle()
@@ -43,6 +37,7 @@ struct ItemView: View {
                     Button(dataModel.count(for: item), systemImage: "hand.thumbsup") {
                         dataModel.add(to: item)
                     }
+                    .buttonRepeatBehavior(.enabled)
                     .buttonStyle(.plain)
                 }
                 .font(.title3.bold())
