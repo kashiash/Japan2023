@@ -1,0 +1,112 @@
+[
+    {
+        "id": "Foods",
+        "icon": "fork.knife",
+        "items": [
+            {
+                "id": "Mister Donut",
+                "description": "The fluffiest pon de ring donuts you can find anywhere."
+            },
+            {
+                "id": "Fruit Sandwiches",
+                "description": "Fruit and fresh cream – what's not to like?"
+            },
+            {
+                "id": "7-Eleven Smoothies",
+                "description": "Frozen fruit and soy milk, blended right in front of you."
+            },
+            {
+                "id": "Milk Roll",
+                "description": "A small slice of heaven."
+            },
+            {
+                "id": "Yoshinoya",
+                "description": "Japanese fast food where you'll find something for everyone."
+            },
+            {
+                "id": "Melonpan",
+                "description": "Many flavors, all delicious."
+            },
+            {
+                "id": "Go Go Curry",
+                "description": "Yes, that's a gorilla."
+            },
+            {
+                "id": "Famichiki",
+                "description": "You won't believe how delicious this stuff is."
+            },
+            {
+                "id": "Ekiben",
+                "description": "Everything good about Japan in one bento box."
+            }
+        ]
+    },
+    {
+        "id": "Drinks",
+        "icon": "waterbottle",
+        "items": [
+            {
+                "id": "Melon Soda",
+                "description": "Made of purest green."
+            },
+            {
+                "id": "Ramune",
+                "description": "Lemonade in a quirky bottle that confuses foreigners."
+            },
+            {
+                "id": "Green Dakara",
+                "description": "Hard to describe, but nice."
+            },
+            {
+                "id": "Mitsuya Cider",
+                "description": "Does it taste of lemon-lime, ginger ale, or both?"
+            },
+            {
+                "id": "Pocari Sweat",
+                "description": "Ignore the name – this drink is excellent."
+            },
+            {
+                "id": "CC Lemon",
+                "description": "A week of vitamin C supplied in a single bottle."
+            },
+            {
+                "id": "Calpis Water",
+                "description": "Refreshing and popular, beaten only by Calpis Soda."
+            }
+        ]
+    },
+    {
+        "id": "Activities",
+        "icon": "figure.walk",
+        "items": [
+            {
+                "id": "UFO Catchers",
+                "description": "Tricky but addictive."
+            },
+            {
+                "id": "Maid Cafe",
+                "description": "The #1 favorite place of both my daughters."
+            },
+            {
+                "id": "Arcades",
+                "description": "Watch locals play faster than the speed of light."
+            },
+            {
+                "id": "Gachapon",
+                "description": "An absurdly addictive way to collect plastic."
+            },
+            {
+                "id": "Karaoke",
+                "description": "Fun when not sober. Also fun when sober. Just fun!"
+            },
+            {
+                "id": "Onsen",
+                "description": "You'll never feel this clean again 😭"
+            },
+            {
+                "id": "Shinkansen",
+                "description": "Trains envied by the world."
+            }
+        ]
+    }
+]
