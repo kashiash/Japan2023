@@ -13,10 +13,16 @@ struct ItemView: View {
 
     var body: some View {
         ZStack(alignment: .bottom) {
-            Image(item.id)
+            Image(systemName: "rainbow")
                 .resizable()
                 .scaledToFill()
                 .frame(height: 400)
+            .symbolRenderingMode(.multicolor)
+            .symbolEffect(.variableColor)
+//            Image(item.id)
+//                .resizable()
+//                .scaledToFill()
+//                .frame(height: 400)
 
             VStack(spacing: 0) {
                 Rectangle()
@@ -28,31 +34,28 @@ struct ItemView: View {
                         Text(item.id)
 
                         Text(item.description)
+                            .lineLimit(2, reservesSpace: true)
                             .font(.body)
                     }
 
                     Spacer()
 
-                    Button {
+                    Button(dataModel.count(for: item), systemImage: "hand.thumbsup") {
                         dataModel.add(to: item)
-                    } label: {
-                        Label(dataModel.count(for: item), systemImage: "hand.thumbsup")
                     }
                     .buttonStyle(.plain)
                 }
                 .font(.title3.bold())
                 .padding(10)
                 .padding(.horizontal, 10)
-                .background(.blue)
+                .background(.blue.gradient)
                 .foregroundStyle(.white)
                 .frame(maxWidth: .infinity)
             }
         }
-
-        .clipShape(RoundedRectangle(cornerRadius: 25))
-        .shadow(color: .black.opacity(0.2), radius: 2)
+        .clipShape(.rect(cornerRadius: 25))
+        .shadow( radius: 2)
         .padding(4)
-       // .containerRelativeFrame(.horizontal, count:5,span:2, spacing: 0)
         .containerRelativeFrame(.horizontal)
     }
 }

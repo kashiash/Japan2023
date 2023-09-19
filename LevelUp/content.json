@@ -1,6 +1,6 @@
 [
     {
-        "id": "Foods",
+        "id": "Food",
         "icon": "fork.knife",
         "items": [
             {
@@ -42,7 +42,7 @@
         ]
     },
     {
-        "id": "Drinks",
+        "id": "Drink",
         "icon": "waterbottle",
         "items": [
             {
@@ -76,7 +76,7 @@
         ]
     },
     {
-        "id": "Activities",
+        "id": "Activity",
         "icon": "figure.walk",
         "items": [
             {

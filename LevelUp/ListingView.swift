@@ -26,7 +26,6 @@ struct ListingView: View {
                             .padding(.horizontal, 20)
                             .scrollTargetLayout()
                         }
-
                         .scrollTargetBehavior(.viewAligned)
                         .contentMargins(20, for: .scrollContent)
                         .listRowInsets(EdgeInsets())
@@ -42,9 +41,10 @@ struct ListingView: View {
             .navigationTitle("🎌 Japan 2023")
             .searchable(text: $dataModel.searchText)
             .toolbar {
-                Button(action: dataModel.reset) {
-                    Label("Erase data", systemImage: "eraser")
-                }
+//                Button(action: dataModel.reset) {
+//                    Label("Erase data", systemImage: "eraser")
+//                }
+                Button("Erase data", systemImage: "eraser",action: dataModel.reset) 
             }
         }
     }

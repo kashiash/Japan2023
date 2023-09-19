@@ -43,7 +43,7 @@ class DataModel: ObservableObject {
 
     func title(for category: Category) -> LocalizedStringKey {
         let items = matchingItems(for: category)
-        return "\(items.count) \(category.id)"
+        return "^[\(items.count) \(category.id)](inflect: true)"
     }
 
     func matchingItems(for category: Category) -> [Item] {
